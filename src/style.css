@@ -1,14 +1,6 @@
-.test {
-    max-height: 200px;
-    max-width: 200px;
-    color: red;  
-    font-family: 'Roboto';
-    background: url(./assets/test.jpg);
-    }
-    
-@font-face {
+ @font-face {
     font-family: 'Roboto';
     src: url('./assets/Roboto-Regular.ttf') format('ttf');
-        font-weight: 500;
-        font-style: normal;
+    font-weight: 500;
+    font-style: normal;
 }
