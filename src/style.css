@@ -4,15 +4,23 @@
   }
  /* Fonts */
  @font-face {
-    font-family: 'Roboto';
-    src: url('./assets/Roboto-Regular.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'font-regular';
+    src: url('./assets/fonts/AbhayaLibre-Regular.ttf') format('truetype');
     font-style: normal;
+    font-weight: 400;
  }
+@font-face {
+    font-family:'font-accent';
+    src: url('./assets/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
 /* Variables */
 body {
     --yellow:rgb(255, 204, 0);
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
-    --font: 'Roboto';
+    --font-content: 'font-regular';
+    --font-accent: 'font-accent';
 }
