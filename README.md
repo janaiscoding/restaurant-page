@@ -29,5 +29,5 @@
 <h3> Project details </h3>
 
 - This project is part of The Odin Project's [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) 
-
+- Materials used for the images copyrights: https://unsplash.com/photos/IS6RwpuEJpY
 
