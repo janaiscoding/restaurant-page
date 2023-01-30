@@ -1,3 +1,7 @@
-//module will export a function that creates a div element
-// adds the appropriate content and styles to that element 
-//and then appends it to the DOM
+import Element from "./element";
+
+const contentDiv = document.querySelector("#content");
+
+export default function loadHome(){
+    const homeElement = new Element("div");
+}
