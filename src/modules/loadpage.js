@@ -3,8 +3,19 @@ const HTMLbody = document.querySelector("body");
 export default function loadHTML(){
 
     const header = document.createElement("header");
+    
+    const headerWrapper = document.createElement("div");
+    headerWrapper.classList.add("header-wrapper");
+
+    const websiteName = document.createElement("h1");
+    websiteName.innerText = "Sooshi Restaurant";
+
+    const logo = document.createElement("img");
+    logo.id = "logo";
+    logo.src = "./assets/images/logo.src";
+    logo.alt = "Sooshi Restaurant Logo";
+    
     const nav = document.createElement("nav");
-    header.textContent = "Fancy Pizza";
 
     const homeButton = document.createElement("button");
     homeButton.classList.add("home-button");
@@ -21,5 +32,7 @@ export default function loadHTML(){
     nav.append(homeButton,menuButton,contactButton);
 
     HTMLbody.insertAdjacentElement("afterbegin", header);
-    header.append(nav);
+
+    headerWrapper.append(websiteName, logo, nav);
+    header.append(headerWrapper);
 }
