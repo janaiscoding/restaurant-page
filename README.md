@@ -26,8 +26,6 @@
 
 - In this project, I ... (to be completed...) </br>
 
-
-
 <h3> Project details </h3>
 
 - This project is part of The Odin Project's [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) 
