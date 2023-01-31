@@ -29,5 +29,10 @@
 <h3> Project details </h3>
 
 - This project is part of The Odin Project's [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) 
-- Materials used for the images copyrights: https://unsplash.com/photos/IS6RwpuEJpY
+- Materials used for the images copyrights:
+1. https://unsplash.com/photos/MgvByrhYz24 for Header image
+2. https://www.pexels.com/photo/clear-glass-bottle-beside-black-bowl-1028427/ for Home image. 
+3. https://www.pexels.com/photo/bright-neon-signboard-with-sushi-grill-wine-and-cocktails-6017587/ for Menu image.
+4. https://www.pexels.com/photo/close-up-photo-of-sushi-served-on-table-248444/ for Contact image.
+
 

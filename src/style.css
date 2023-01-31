@@ -1,26 +1,189 @@
-* {
+/* Fonts: */
+@font-face {
+    font-family: "logo-font";
+    src: url("/src/fonts/logo-font.ttf") format("truetype");
+    style: normal;
+    weight: 400;
+    stretch: 100;
+  }
+  @font-face {
+    font-family: "accent-font";
+    src: url("/src/fonts/accent-font.ttf") format("truetype");
+    style: normal;
+    weight: 400;
+    stretch: 100;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
   }
- /* Fonts */
- @font-face {
-    font-family: 'font-regular';
-    src: url('./assets/fonts/AbhayaLibre-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 400;
- }
-@font-face {
-    font-family:'font-accent';
-    src: url('./assets/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 600;
-}
-
-/* Variables */
-body {
-    --yellow:rgb(255, 204, 0);
-    --white: rgb(255, 255, 255);
-    --black: rgb(0, 0, 0);
-    --font-content: 'font-regular';
-    --font-accent: 'font-accent';
-}
+  
+  body {
+    /* Variables: */
+    --accent-orange: #e76302;
+    --accent-white: #e0cbac;
+    --accent-brown: #73a735;
+    --logo-font: "logo-font", monospace;
+    --main-font: "Lucidia Sans", sans-serif;
+    --accent-font: "accent-font";
+  }
+  
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 25vh;
+    background-image: url("./img/header-img.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0rem;
+    font-family: var(--logo-font);
+    font-size: clamp(50px, 6vw, 7vw);
+    color: var(--accent-orange);
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 2px 5px var(--accent-green);
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 50%;
+    width: clamp(412px, 60vw, 60vw);
+    font-family: var(--logo-font);
+  }
+  
+  h1 {
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    padding: 20px;
+    font-family: var(--logo-font);
+    text-align: center;
+  }
+  
+  h2,
+  h3 {
+    text-align: left;
+    font-family: var(--accent-font);
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+  #contact-h2 {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  h3 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+  }
+  
+  img {
+    border-radius: 10px;
+  }
+  
+  p {
+    width: 50vw;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-family: var(--main-font);
+    padding: 20px 10vw;
+  }
+  #contact-about-p {
+    padding: 0;
+    text-align: left;
+    width: inherit;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+  }
+  
+  ul {
+    font-family: var(--main-font);
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    padding: 10px 0;
+  }
+  
+  button {
+    padding: clamp(5px, 1vw, 10vw);
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-orange);
+    font-size: clamp(15px, 1.5rem, 2rem);
+    font-family: var(--logo-font);
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  button:active {
+    background-color: var(--accent-white);
+  }
+  
+  /* ~~~~~~~~~~TABS~~~~~~~~~~ */
+  .content {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: lavender;
+    height: 100vh;
+  }
+  
+  .tab {
+    margin: 0 auto;
+  }
+  #home-tab {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tab-img {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: clamp(150px, 100%, 30vw);
+  }
+  #home-img {
+    content: url('./img/home-img.jpg');
+    width: clamp(300px, 100%, 30vw);
+  }
+  #menu-img {
+    content: url('./img/menu-img.jpg');
+    width: clamp(250px, 100%, 30vw);
+  }
+  #contact-img {
+    content: url('./img/contact-img.jpg');
+  }
+  
+  .container-div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: clamp(412px, 60vw, 60vw);
+  }
+  #contact-container {
+    justify-content: center;
+  }
+  
+  .div-child {
+    align-self: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
+  }
+  #contact-child {
+    width: 45%;
+    padding: 0 10px;
+  }

@@ -1,39 +1,35 @@
-import loadHTML from "./modules/loadpage";
-import loadHome from "./modules/home";
-import loadMenu from "./modules/menu";
-import loadContact from "./modules/contact";
-import './style.css';
+import loadHTML from "./loadpage";
+import loadHome from "./pages/home";
+import loadMenu from "./pages/menu";
+import loadContact from "./pages/contact";
+import "./style.css";
 
-//initial load
-console.log("This is a test.");
 loadHTML();
 loadHome();
 
-// JS logic 
-// home tab 
+// home tab
 const homeButton = document.querySelector(".home-button");
 homeButton.addEventListener("click", () => {
-    clearContent();
-    loadHome();
+  clearContentBox();
+  loadHome();
 });
 
-//menu tab
+// menu tab
 const menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", () => {
-    clearContent();
-    loadMenu();
+  clearContentBox();
+  loadMenu();
 });
 
-//contact tab 
+// contact tab
 const contactButton = document.querySelector(".contact-button");
 contactButton.addEventListener("click", () => {
-    clearContent();
-    loadContact();
+  clearContentBox();
+  loadContact();
 });
 
-//cleaning the selected tab
-function clearContent() {
-    const contentDiv = document.querySelector("#content");
-    contentDiv.replaceChildren();
-    return;
+function clearContentBox() {
+  const contentBox = document.querySelector(".content");
+  contentBox.replaceChildren();
+  return;
 }
