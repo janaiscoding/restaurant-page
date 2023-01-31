@@ -1,4 +1,4 @@
-<h1> Sooshi Restaurant Page </h1>
+<h1> Jana's Sushi Restaurant Page </h1>
 
 # Live Demo 
 - See the full live preview [here](https://janaiscoding.github.io/restaurant-page/).
